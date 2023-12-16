@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NewsFlex | Home</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="./assets/lightNoBGCropped.png" alt="company-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex nav-items-group">
+                    <li class="hover-link nav-item" id="sports" onclick="handleClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="handleClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="handleClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g. Science">
+                <button class="btn search-btn" id="search-btn">search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">this is title</h3>
+                    <h6 class="news-source" id="news-source">end gadget 26/08/23</h6>
+                    <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea! Impedit accusamus quisquam provident blanditiis tempore necessitatibus fuga animi sint.</p>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is title</h3>
+                <h6 class="news-source" id="news-source">end gadget 26/08/23</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ea! Impedit accusamus quisquam provident blanditiis tempore necessitatibus fuga animi sint.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
