@@ -4,10 +4,7 @@
       "runtime": "node@18.14.1"
     }
   },
-  "builds": [
-    { "src": "public/**/*", "use": "@vercel/static" },
-    { "src": "api/**/*", "use": "@vercel/node" }
-  ],
+  "builds": [{ "src": "api/**/*", "use": "@vercel/node" }],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": ".*", "dest": "/index.html" }
