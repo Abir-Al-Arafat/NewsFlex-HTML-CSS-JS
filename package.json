@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Abir-Al-Arafat/NewsFlex-HTML-CSS-JS/issues"
   },
-  "homepage": "https://github.com/Abir-Al-Arafat/NewsFlex-HTML-CSS-JS#readme"
+  "homepage": "https://github.com/Abir-Al-Arafat/NewsFlex-HTML-CSS-JS#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.2"
+  }
 }
