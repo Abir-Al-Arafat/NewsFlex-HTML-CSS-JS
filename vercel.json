@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/**/*": {
-      "runtime": "node@18.14.1"
-    }
-  },
   "builds": [{ "src": "api/**/*", "use": "@vercel/node" }],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
