@@ -3,6 +3,9 @@
 // Define the base URL based on the environment
 const BASE_URL = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://newsflex-abir.vercel.app';
 
+console.log("hostname", window.location.hostname);
+console.log("type", typeof window.location.hostname);
+
 document.addEventListener('DOMContentLoaded', async function () {
   fetchNews("Climate");
 });
