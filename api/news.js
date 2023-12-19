@@ -15,6 +15,12 @@ module.exports = async function (req, res) {
   
       const apiUrl = `${url}${query}&apiKey=${API_KEY}`;
       const response = await fetch(apiUrl);
+
+      // Add CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
       const data = await response.json();
       res.json(data);
     } catch (error) {
